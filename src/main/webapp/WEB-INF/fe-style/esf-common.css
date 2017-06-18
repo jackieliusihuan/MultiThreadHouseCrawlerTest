@@ -1,0 +1,481 @@
+/*
+Copyright (c) 2010, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 3.1.1
+build: 47
+*/
+/*
+    TODO will need to remove settings on HTML since we can't namespace it.
+    TODO with the prefix, should I group by selector or property for weight savings?
+*/
+html{
+    color:#000;
+    background:#FFF;
+}
+/*
+    TODO remove settings on BODY since we can't namespace it.
+*/
+/*
+    TODO test putting a class on HEAD.
+        - Fails on FF. 
+*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin:0;
+    padding:0;
+}
+body, input{background:#FFF;}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+fieldset,
+img {
+    border:0;
+}
+/*
+    TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
+*/
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style:normal;
+    font-weight:normal;
+}
+/*
+    TODO Figure out where this list-style rule is best set. Hedger has a request to investigate.
+*/
+li {
+    list-style:none;
+}
+
+caption,
+th {
+    text-align:left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size:100%;
+    font-weight:normal;
+}
+q:before,
+q:after {
+    content:'';
+}
+abbr,
+acronym {
+    border:0;
+    font-variant:normal;
+}
+/* to preserve line-height and selector appearance */
+sup {
+    vertical-align:text-top;
+}
+sub {
+    vertical-align:text-bottom;
+}
+input,
+textarea,
+select {
+    font-family:inherit;
+    font-size:inherit;
+    font-weight:inherit;
+}
+/*to enable resizing for IE*/
+input,
+textarea,
+select {
+    *font-size:100%;
+}
+/*because legend doesn't inherit in IE */
+legend {
+    color:#000;
+}
+/* global */
+body{
+    font-size:12px;
+    line-height:1.75em;
+    font-family:Arial,Verdana,"\5FAE\8F6F\96C5\9ED1";
+    _font-family:"\5B8B\4F53";
+    color:#333333;
+}
+
+/* link */
+a {
+    color:#333;
+    text-decoration:none;
+    outline: none;
+}
+a:hover {
+    color:#E43;
+    text-decoration:underline;
+    outline: none;
+}
+
+/* 清除浮动 */
+.global-clearfix:after{
+    content:'.';
+    display:block;
+    visibility:hidden;
+    height:0;
+    line-height:0;
+    font-size:0;
+    clear:both;
+}
+.global-clearfix{
+    zoom:1;
+}
+.global-clear{
+    clear:both;
+}
+
+html,body {
+    text-align: center;
+    width: 100%;
+}
+
+#doc {
+    width: 100%;
+    min-width: 1200px;
+    text-align: center;
+    /*background-color: #f1f1f1;*/
+}
+
+#bd {
+    width: 1200px;
+    margin: 0 auto 0 auto;
+}
+
+
+
+#main {
+    width: 1200px;
+    margin: 0 auto;
+    float: right;
+}
+
+.footer {
+    margin: 0 auto;
+    clear: both;
+}
+
+#cfloat {
+    position: fixed;
+    bottom: 166px;
+    right: 5px;
+    width: 60px;
+}
+
+#header {
+    width: 100%;
+}
+
+.module-header{
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+}
+
+.module-header .header-wrap{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    color: #ccc;
+    font-size: 12px;
+}
+/*header left*/
+.module-header .header-left{
+    float: left;
+    height: 100%;
+}
+
+.module-header .channel-nav-list{
+    list-style: none;
+    height: 100%;
+}
+
+.module-header .channel-nav-item{
+    float: left;
+    height: 100%;
+    line-height: 40px;
+    margin-right: 26px;
+}
+
+.icon-index{
+    float: left;
+    margin: 11px 9px 0px 0px;
+    width: 15px;
+    height: 15px;
+    background-image: url('./image/module-header-icon-open-index.png');
+    vertical-align: top;
+}
+
+.module-header .channel-link{
+    color: #ccc;
+    float: left;
+}
+
+/*header left*/
+.module-header .header-right{
+    float: right;
+    white-space: nowrap;
+}
+
+.module-header .btn{
+    color: #ccc;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+}
+
+/*.module-header .btn:hover{
+    color: #ee4433;
+    text-decoration: none;
+}*/
+
+.module-header .divide-line{
+    color: #ccc;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+}
+
+.module-header .btn .icon{
+    display: inline-block;
+}
+
+.module-header .btn-open-platform{
+    margin-right: 30px;
+}
+
+.module-header .btn-open-platform .icon{
+    width: 19px;
+    height: 19px;
+    margin-top: 11px;
+    float: left;
+    background: url('./image/module-header-icon-open-platform.png') no-repeat;
+}
+
+.module-header .btn-open-platform .txt{
+    margin-left: 9px;
+}
+
+.module-header .btn-open-login, .module-header .btn-info{
+    margin-right: 4px;
+}
+
+.module-header .btn-open-login .icon{
+    width: 20px;
+    height: 18px;
+    margin-top: 11px;
+    float: left;
+    background-image: url('./image/module-header-icon-open-login.png');
+}
+
+.module-header .btn-info .icon{
+    width: 20px;
+    height: 18px;
+    margin-top: 11px;
+    float: left;
+    background-image: url('./image/module-header-icon-open-login.png');
+}
+
+.module-header .btn-info .txt{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.module-header .btn-open-login .txt{
+    margin-left: 10px;
+}
+
+.module-header .btn-open-signup{
+    margin-left: 5px;
+}
+
+.header-search-wrapper {
+    background: #f8f8f8;
+    width: 100%;
+}
+
+.header-search-wrapper .header-search {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 18px 0;
+}
+
+.header-search-left {
+    float: left;
+}
+
+.logo {
+    background: url('./image/logo.png');
+    width: 147px;
+    height: 42px;
+}
+
+.header-search-right {
+    float: right;
+    margin-top: 5px;
+}
+
+.search-input {
+    float: left;
+    width: 481px;
+    height: 18px;
+    border: 1px solid #dedede;
+    padding: 7px 14px;
+    font-size: 14px;
+    color: #999;
+    outline: #e43;
+}
+
+.btn-search {
+    float: left;
+    background: #e43;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    width: 80px;
+    height: 32px;
+    outline: 0;
+    line-height: 32px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.btn-search:hover {
+    background: #db3f2f;
+}
+
+.module-footer {
+    width: 100%;
+    min-width: 1200px;
+    background: #333;
+    font-size: 12px;
+    margin: 0 auto;
+}
+.module-footer .h-area{
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 7px;
+}
+.module-footer .h-area a{
+  color: #999;
+}
+.module-footer .h-area a:hover{
+  color: #e43;
+}
+.module-footer .footer-link {
+    padding: 32px 0 0;
+    border-top: 1px solid #454545
+}
+.module-footer .foot-copy {
+    line-height: 30px;
+    color: #777;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.module-footer .foot-copy a {
+    color: #777
+}
+
+.module-footer .footer-link .f-l-con em,.foot-copy em {
+        padding: 0px 4px 0 7px;
+}
+
+.module-footer .footer-tag a {
+    min-width: 60px;
+    height: 31px;
+    font-size: 14px;
+    color: #999;
+    display: inline-block
+}
+
+.module-footer .footer-tag a.current,.footer-tag a:hover {
+    font-weight: 700;
+    background: url('/module/footer/img/f_link.png') left bottom no-repeat;
+    text-decoration: none;
+    color: #fff
+}
+.module-footer .footer-tag .f-line {
+    width: 1px;
+    height: 16px;
+    border-right: 1px solid #616161;
+    display: inline-block;
+    margin: 0 18px;
+    position: relative;
+    top: 4px;
+}
+.module-footer .footer-link .f-l-con {
+    color: #999;
+    line-height: 30px;
+    margin-top: 10px;
+    display: none
+}
+
+.module-footer .sohu_linka {
+    height: 94px;
+    text-align: center;
+    line-height: 27px;
+    color: #999
+}
+
+.list-sort {
+    border-bottom: 2px solid #e43;
+    width: 100%;
+}
+
+.list-sort-item {
+    display: block;
+    float: left;
+    width: 116px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+
+.list-sort-item:hover {
+    text-decoration: none;
+}
+
+.list-sort-item.cur {
+    background: #e43;
+    color: #fff;
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true">
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{30}.%method - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+<!--     <appender name="UDP_APPENDER" class="com.sohu.test.log4j.UdpLogbackAppender"> -->
+<!--         <remoteHost>10.11.157.47</remoteHost> -->
+<!--         <port>1234</port> -->
+<!--         <myport>${port}</myport> -->
+        
+<!--         <encoder> -->
+<!--             <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{30}.%method - %msg%n</pattern> -->
+<!--         </encoder> -->
+<!--     </appender> -->
+
+    <logger name="org.springframework" level="ERROR" />
+
+    <root>
+        <level value="INFO" />
+        <appender-ref ref="CONSOLE" />
+<!--         <appender-ref ref="UDP_APPENDER" /> -->
+    </root>
+
+</configuration>

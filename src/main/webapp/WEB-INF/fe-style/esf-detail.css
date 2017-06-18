@@ -1,0 +1,618 @@
+.brumb {
+    text-align: left;
+    font-size: 14px;
+    color: #666;
+    position: relative;
+    margin: 17px 0 0 0;
+}
+
+.brumb-a {
+    color: #666;
+}
+
+.brumb-update {
+    color: #999;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.brumb-update span:first-child{
+    margin: 0 17px 0 0;
+}
+
+.detail {
+    border-top: 1px solid #efefef;
+    padding: 20px 0 0 0;
+    margin: 13px 0 0 0;
+}
+
+.detai-img {
+    width: 710px;
+    height: 493px;
+}
+
+.detail-left {
+    position: relative;
+    float: left;
+    width: 710px;
+    margin-right: -710px;
+}
+
+.detail-right {
+    float: right;
+    width: 100%;
+}
+
+.detail-info {
+    text-align: left;
+    margin-left: 710px;
+    padding: 0px 0 0 29px;
+}
+
+.info-title {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 45px;
+    margin: -8px 0 0 0;
+}
+
+.info-price {
+    font-size: 60px;
+    font-weight: bold;
+    color: #e43;
+    margin: 71px 0 0 0;
+    position: relative;
+}
+
+.price-unit {
+    font-size: 31px;
+}
+
+.price-avg {
+    font-size: 14px;
+    color: #333;
+    position: absolute;
+    bottom: -18px;
+    right: 0;
+    font-weight: normal;
+}
+
+.info-type {
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+    margin: 36px 0 30px;
+    padding: 20px 0;
+}
+
+.type-item {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    border-left: 1px solid #efefef;
+    width: 153px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.type-item:first-child {
+    border-left: none;
+}
+
+.base-info-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.info-w {
+    font-size: 14px;
+    color: #999;
+    margin: 21px 0 0 0;
+}
+
+.info-item {
+    width: 260px;
+    float: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 0 0 17px 0;
+}
+
+.info-item.odd {
+    width: 200px;
+}
+
+.info-content {
+    color: #333;
+}
+
+.newsContent {
+    margin: 27px 0 0 0;
+}
+
+.news-list-content {
+
+}
+
+.news-list-item {
+    padding: 30px 0 23px;
+    text-align: left;
+    border-bottom: 1px solid #efefef;
+}
+
+.news-item-left {
+    float: left;
+    width: 238px;
+}
+
+.news-item-img {
+    width: 238px;
+    height: 182px;
+}
+
+.news-item-right  {
+    margin-left: 238px;
+    padding: 0 0 0 21px;
+    position: relative;
+}
+
+.news-item-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.news-separator {
+    margin: 0 7px;
+}
+
+.news-type-w {
+    margin: 11px 0 0 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.news-type {
+    
+}
+
+.news-tags-w {
+    margin: 12px 0 0 0;
+}
+
+.news-tag {
+    font-size: 12px;
+    color: #9eaab9;
+    background: #eff5fa;
+    padding: 4px 8px;
+    margin-right: 7px;
+}
+
+.developer-w {
+    text-align: left;
+    margin: 15px 0 0 0;
+}
+
+.developer-left {
+    float: left;
+    width: 81px;
+}
+
+.developer-img {
+    width: 81px;
+    height: 81px;
+}
+
+.developer-right {
+    margin-left: 81px;
+    background: #f8f8f8;
+    padding: 7px 0 13px 17px;
+}
+
+.developer-name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.developer-num {
+    color: #e43;
+    font-size: 16px;
+    margin: 0 0 0 18px;
+}
+
+.developer-num-han {
+    font-size: 14px;
+}
+
+.developer-content {
+    font-size: 14px;
+    color: #666;
+    line-height: 21px;
+    margin: 3px 0 0 0;
+}
+
+.news-price {
+    position: absolute;
+    right: 0;
+    top: 3px;
+    text-align: right;
+}
+
+.news-price-num {
+    font-size: 30px;
+    color: #e43;
+}
+
+.news-price-han {
+    font-size: 18px;
+}
+
+.news-price-avg {
+    font-size: 14px;
+    color: #666;
+    margin: 7px 0 0 0;
+}
+
+.news-update {
+    position: absolute;
+    right: 0;
+    bottom: -22px;
+    color: #999;
+}
+
+.news-update-time {
+    font-size: 14px;
+    margin: 0 23px 0 0;
+}
+
+.deal-records {
+    margin: 40px 0 0 0;
+}
+
+.records-table-w {
+    margin: 22px 0 0 0;
+}
+
+.records-table {
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid #efefef;
+}
+
+.records-table th, .records-table td {
+    padding: 0 20px 0 20px;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+    height: 40px;
+    text-align: right;
+}
+
+.records-table tr.even td {
+    background: #f8f8f8;
+}
+
+.records-table .deal-date  {
+    width: 90px;
+}
+
+.records-table .deal-price {
+    width: 101px;
+}
+
+.records-table .deal-unit-price {
+    width: 135px;
+}
+
+.records-table .deal-huxing {
+    width: 145px;
+}
+
+.records-table .deal-acreage {
+    width: 144px;
+}
+
+.records-table .deal-orientations {
+    width: 144px;
+}
+
+
+.records-table .align-left {
+    text-align: left;
+}
+
+.house-dongtai {
+    text-align: left;
+    margin: 30px 0 0 0;
+}
+
+.block-title {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #efefef;
+    text-align: left;
+}
+
+.village-intro {
+    margin: 45px 0 0 0;
+}
+
+.village-intro-left {
+    float: left;
+    width: 149px;
+}
+
+
+.intro-left-img  {
+    width: 149px;
+    height: 109px;
+}
+
+.village-intro-right {
+    text-align: left;
+    margin-left: 149px;
+    padding: 13px 0 0 33px;
+}
+
+.village-intro-content {
+    margin: 19px 0 0 0;
+}
+
+.village-intro-info {
+    width: 754px;
+}
+
+
+.intro-info-item {
+    font-size: 14px;
+    color: #999;
+    float: left;
+    width: 251px;
+    margin-bottom: 12px;
+}
+
+.info-value {
+    color: #666;
+}
+
+.around-peitao {
+    margin: 50px 0 0 0;
+}
+
+
+.map-peitao-w {
+    margin: 20px 0 0 0;
+}
+
+.map-peitao-w {
+    width: 100%;
+    position: relative;
+}
+
+#map-wrapper {
+    height: 530px;
+    background: #000;
+}
+
+.map-press {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 420px;
+    height: 490px;
+    padding: 20px;
+    background: url('./image/map-press.png') no-repeat;
+}
+
+.map-press-menu {
+    border-bottom: 2px solid #e43;
+}
+
+.press-menu-item {
+    float: left;
+    cursor: pointer;
+    font-size: 14px;
+    width: 60px;
+    height: 38px;
+    background: #fff;
+    line-height: 40px;
+}
+
+
+.press-menu-item:hover {
+    color: #e43;
+}
+
+.press-menu-item.cur {
+    color: #fff;
+    background: #e43;
+}
+
+.press-list-w {
+    text-align: left;
+    padding: 11px 15px 0;
+    height: 440px;
+    overflow-y: scroll;
+    position: relative;
+}
+
+.press-list-item {
+    border-top: 1px solid #efefef;
+    position: relative;
+    padding: 18px 27px 16px;
+    cursor: pointer;
+}
+
+.press-list-item:hover {
+    background: #f8f8f8;
+}
+
+.press-list-item:first-child {
+    border-top: none;
+}
+
+.press-item-title {
+    font-size: 16px;
+}
+
+.press-item-subtitle {
+    font-size: 14px;
+    color: #666;
+    margin: 8px 0 0 0;
+}
+
+.press-icon {
+    position: absolute;
+    left: 1px;
+    top: 20px;
+    background: url('./image/map-icon-s.png') no-repeat;
+    width: 13px;
+    height: 17px;
+}
+
+.press-meter {
+    position: absolute;
+    right: 12px;
+    top: 18px;
+    font-size: 14px;
+}
+
+.may-like {
+    margin: 50px 0 70px 0;
+}
+
+.like-list-w {
+    margin: 19px 0 0 0;
+    text-align: left;
+}
+
+.like-list-item {
+    position: relative;
+    float: left;
+    margin: 0 0 0 18px;
+}
+
+.like-list-item:first-child {
+    margin-left: 0;
+}
+
+.like-img-w {
+    position: relative;
+}
+
+.like-img {
+    width: 286px;
+    height: 200px;
+}
+
+.like-price {
+    position: absolute;
+    font-size: 14px;
+    color: #fff;
+    top: 10px;
+    left: 0;
+    font-weight: bold;
+    background: #e43;
+    width: 60px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.like-item-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 6px 0 0 0;
+}
+
+.like-item-tags {
+    font-size: 14px;
+    color: #666;
+    margin: 9px 0 0 0;
+}
+
+.like-separator {
+    
+}
+
+.dongtai-wrapper {
+    text-align: center;
+    overflow-x: scroll;
+    width: 100%;
+    position: relative;
+}
+
+.dongtai-item {
+    float: left;
+    width: 240px;
+    height: 280px;
+    position: relative;
+
+}
+
+.point-info {
+    background: #f8f8f8;
+    width: 156px;
+    height: 41px;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 8px 0;
+    position: absolute;
+    bottom: 20px;
+    left: -73px;
+}
+
+.dongtai-item:hover .point-info{
+    background: #e43;
+    color: #fff;
+}
+
+.dongtai-item:hover .point-info p:first-child{
+    margin: 0 0 2px 0;
+}
+
+.point-price {
+    color: #e43;
+    font-weight: bold;
+}
+
+.dongtai-item:hover .point-price {
+    color: #fff;
+}
+
+.dongtai-point {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: #efefef;
+    top: 154px;
+    left: 114px;
+}
+
+.dongtai-item:hover .dongtai-point {
+    background: #e43;
+}
+
+.x-axis-item {
+    width: 240px;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /*margin: 254px 0 0;*/
+    border-top: 1px solid #aaa;
+    padding: 4px 0 0 0;
+}
+
+.dongtai-item:hover .x-axis-item {
+    background: #c6defc;
+}
+
+#raphael-w {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    /*z-index: 12;*/
+    overflow: hidden;
+}
